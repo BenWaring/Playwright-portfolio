@@ -1,0 +1,26 @@
+Bug #2:
+
+Severity: Medium
+Priority: Medium
+
+Summary:
+After submitting the contact form there is no visible indication of successful submission.
+
+What is the expected results:
+There should be a confirmation that the submission was correct.
+(Something you would confirm with Product or Development)
+
+Is there a suitable workaround?:
+No - however this doesn't seem to break anything on the site and would be more a client side issue.
+
+Repro Steps:
+Go to the contact form on the front page
+Enter the information into the contact form
+Click submit
+Observe no confirmation warning
+
+Screenshots for supporting the defect:
+(Screenshot of the contact form after submitting)
+
+Stack trace:
+N/A

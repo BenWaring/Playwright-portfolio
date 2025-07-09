@@ -1,0 +1,40 @@
+Bug #1:
+
+Severity: Urgent
+Priority: High
+
+Summary:
+"Application error: a client-side exception has occurred while loading automationintesting.online (see the browser console for more information)."
+Error page when double booking a single room.
+
+What is the expected results:
+The user should get a warning telling them that this room is booked for those dates.
+(Something you would confirm with Product or Development)
+
+Is there a suitable workaround?:
+No there is no suitable working
+
+Repro Steps:
+Go to the Booking page:
+Load the site > Click on book now on a single room > wait for the booking page to Load
+In the date section, select a series of dates that are shown as "unavailable" 
+Click Reserve now
+Enter your details after the forms appear 
+Click Reserve now again
+Observe the error.
+
+Screenshots for supporting the defect:
+(Screenshot would go here fo the error page)
+
+Stack trace:
+Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+    at j (page-9d8c574de02e03c2.js:1:10287)
+    at l2 (4bd1b696-97efe28d29f2a1a8.js:1:50099)
+    at ox (4bd1b696-97efe28d29f2a1a8.js:1:69890)
+    at oU (4bd1b696-97efe28d29f2a1a8.js:1:81085)
+    at ic (4bd1b696-97efe28d29f2a1a8.js:1:112390)
+    at 4bd1b696-97efe28d29f2a1a8.js:1:112235
+    at is (4bd1b696-97efe28d29f2a1a8.js:1:112243)
+    at u5 (4bd1b696-97efe28d29f2a1a8.js:1:109326)
+    at iH (4bd1b696-97efe28d29f2a1a8.js:1:129983)
+    at MessagePort.w (1684-3beb6b80ac017744.js:1:54574)
