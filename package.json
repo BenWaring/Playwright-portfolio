@@ -1,0 +1,20 @@
+{
+  "name": "playwright-demo-suite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.10"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "axe-playwright": "^2.1.0",
+    "dotenv": "^17.0.1",
+    "playwright": "^1.53.2"
+  }
+}
