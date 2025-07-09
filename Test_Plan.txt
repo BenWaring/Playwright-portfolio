@@ -1,0 +1,57 @@
+
+Objective of test suite:
+To verify that the core functionality, accessibility, and performance of the web application.
+Making sure this meets functional and non-functional requirements through automated testing using Playwright and Axe-core(Axe-Playwright).
+
+Test Categories:
+Smoke Tests
+These are quick checks to ensure the app is working 
+(where there is smoke there is fire).
+Test areas:
+Navigation/Basic health checks - Get the URL and load the pages and make sure they load in a specific time frame
+Admin login/logout - check that you can login correct, logout as expected and if you attempt to login with incorrect credentials, a validation box flags.
+Performance checks - Load the page and check the performance metrics, output them to a JSON file for tracking. If the performance isn't hitting metrics fail the tests.
+
+
+Core Tests
+These tests cover core actions and operations on the site.
+
+Front Page:
+Check availability of rooms - make sure the room you are expecting appears for the availability you are selecting.
+Book a single room - book a single room by clicking on it and making sure you can go ahead with the booking
+Use the contact form - use the contact form to send through a correct form. Also check the validation warning appears when testing the form being incomplete.
+
+Booking Page:
+beforeAll hook - navigate to the page, select a single room to book, check the date range using a mouse drag, and then begin the tests.
+Incomplete booking - make sure you can click reserve now after filling in no details and make sure the validation pops up.
+Cancel booking - make sure you can cancel a booking after setting one up
+Complete booking - make sure you can complete a booking after setting one up
+Double booking - make sure you cannot double book a room for the same date (an error occurrs here which is a defect, for now the test asserts this error happens.)
+
+Admin Page:
+Room checks - Making sure a room can be created, verify the creation and delete the room
+//This test specifically I have not built as I believe my work elsewhere can inform what this test would need to look like. However it would and should be check as part of the core functionality of the test itself.
+
+
+Expanded Testing
+Accessibility tests - I have check the accessibility of pages using Axe-Playwright, this outputs to a JSON file to make sure that these failures can be followed up with bugs/defects if needed.
+
+The test plan would then go on to convey any other scenarios that we might need, outlining what we want to cover and why for example:
+Test Plan - Room Creation:
+@Core test
+Test 1 - Create a room - login to the Admin section, navigate to the Rooms section, create a room:
+Make sure the room has the following amenities: WIFI, TV, RADIO
+Make sure the room costs the following: 150
+Make sure it is titled: NEW - Single Room with a view
+Create the room
+
+Test 2 - Verify the new room has been created
+
+Test 3 - Verify a non Admin user can see the new room
+
+Test 4 - Book the new room
+
+Test 5 - AfterAll, make sure the new room is deleted.
+
+This test plan could then be drilled down to make sure every aspect has it's respective test case, we could use that for tracking purposes within Scrum/Agile.
+Once this had been completed, it could the be summarised and added to the test plan files if needed - This all depends on how you manage your test suites, whether it is locally managed or in a bugging DB.
