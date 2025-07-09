@@ -1,5 +1,8 @@
 # Playwright Testing Suite
-
+---
+For quick access to the project the .rar zipped version of the project would be ideal, however if you wish to see some of the files themselves they can also be found within the repo.
+Note that some files missing are specifically for getting Playwright running - I have created all of this to run in VSCode and would recommend running this in the same IDE.
+---
 This project contains automated tests for key pages of the web page "https://automationintesting.online/" — It checks specifically the: Admin, Bookings, and Front Page — using Playwright. 
 It performs both functionality and performance tests, along with accessibility audits powered by axe-playwright.
 The performance tests and the accessibility tests both output their findings to JSON files. If you want to delete the JSON files within the test-results folder to check this, feel free.
