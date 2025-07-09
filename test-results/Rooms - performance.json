@@ -1,0 +1,10 @@
+[
+  {
+    "comment": "THIS COMMENT WAS ADDED AFTER THE FILE WAS CREATED - YOU CAN TEST THIS FILE CREATION WORKS BY DELETING THE FILE AND RE-RUNNING THE PERFORMANCE TESTS.",
+    "loadTime": 282.60000014305115,
+    "domInteractive": 180.5,
+    "ttfb": 55,
+    "url": "https://automationintesting.online/#rooms",
+    "timestamp": "2025-07-09T08:12:11.698Z"
+  }
+]
