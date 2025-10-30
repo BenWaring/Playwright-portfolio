@@ -21,6 +21,3 @@ Observe no confirmation warning
 
 Screenshots for supporting the defect:
 (Screenshot of the contact form after submitting)
-
-Stack trace:
-N/A

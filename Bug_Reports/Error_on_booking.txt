@@ -21,7 +21,7 @@ In the date section, select a series of dates that are shown as "unavailable"
 Click Reserve now
 Enter your details after the forms appear 
 Click Reserve now again
-Observe the error.
+Observe the error
 
 Screenshots for supporting the defect:
 (Screenshot would go here fo the error page)
