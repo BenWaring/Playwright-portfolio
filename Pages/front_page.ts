@@ -42,7 +42,13 @@ export class Bookings {
     readonly CHECK_AVAILABILITY : Locator;
     //After clicking on either check-in or check out
     readonly DATE_SELECT: Locator;
-    //Choosing the date method
+
+  /**
+   * Retrieves a locator for a date option within a dropdown (e.g., check-in or check-out).
+   * @param page - The current Page instance.
+   * @param dateLabel - The label text used to identify the option (e.g., "Check-in date").
+   * @returns A Locator targeting the matching option element.
+   */
     getDateOption(page: Page, dateLabel: string): Locator {
         return page.getByRole('option', { name: `Choose ${dateLabel}` });
     }

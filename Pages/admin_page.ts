@@ -46,15 +46,24 @@ export class Login {
     }
 }
 
-//Function for logging in - this is to be used instead of the manual login from other tests
-export async function login(page: Page) {
+    /**
+     * Logs into the Admin portal using the provided details.
+     * Designed to replace manual login sequences in tests.
+     * @param page - The current  Page instance.
+     * @param userName - The username for login.
+     * @param password - The password for login.
+     *
+     * @example
+     * await login(page, process.env.ADMIN_USERNAME!, process.env.ADMIN_PASSWORD!);
+     */
+    export async function login(page: Page, userName: string, password: string) {
 
-    const LOGIN_PAGE = new Login(page);
+        const LOGIN_PAGE = new Login(page);
 
-    await page.goto(URL_STUB);
-    await LOGIN_PAGE.USER_NAME.fill(process.env.ADMIN_USERNAME!);
-    await LOGIN_PAGE.PASSWORD.fill(process.env.ADMIN_PASSWORD!);
-    await LOGIN_PAGE.LOGIN.click();
+        await page.goto(URL_STUB);
+        await LOGIN_PAGE.USER_NAME.fill(userName);
+        await LOGIN_PAGE.PASSWORD.fill(password);
+        await LOGIN_PAGE.LOGIN.click();
 }
 
 //Class for the Admin sections after logging in
