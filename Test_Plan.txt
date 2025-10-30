@@ -1,4 +1,3 @@
-
 Objective of test suite:
 To verify that the core functionality, accessibility, and performance of the web application.
 Making sure this meets functional and non-functional requirements through automated testing using Playwright and Axe-core(Axe-Playwright).
