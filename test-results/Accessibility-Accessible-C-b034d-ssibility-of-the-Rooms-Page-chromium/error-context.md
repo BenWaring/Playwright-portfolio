@@ -1,5 +1,4 @@
 # Page snapshot
-
 ```yaml
 - navigation:
   - link "Shady Meadows B&B":
